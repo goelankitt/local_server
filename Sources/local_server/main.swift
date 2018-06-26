@@ -2,7 +2,7 @@ import Embassy
 import Foundation
 
 let loop = try! SelectorEventLoop(selector: try! KqueueSelector())
-let server = DefaultHTTPServer(eventLoop: loop, port: 8080) {
+let server = DefaultHTTPServer(eventLoop: loop, port: 8888) {
     (
         environ: [String: Any],
         startResponse: ((String, [(String, String)]) -> Void),
